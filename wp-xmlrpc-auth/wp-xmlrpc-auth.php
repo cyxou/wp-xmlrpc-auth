@@ -22,8 +22,6 @@ function mynamespace_getUserID( $args ) {
     if ( ! $user = $wp_xmlrpc_server->login( $username, $password ) )
         return $wp_xmlrpc_server->error;
 
-    /*return $user->user_email;*/
-
     return array(
         "wpid" => $user->ID,
         "email" => $user->user_email,
