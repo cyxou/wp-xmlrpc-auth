@@ -26,6 +26,8 @@ function mynamespace_getUserID( $args ) {
         "wpid" => $user->ID,
         "email" => $user->user_email,
         "registeredOn" => $user->user_registered,
+        "first_name" => $user->first_name,
+        "last_name" => $user->last_name
         );
 }
 
